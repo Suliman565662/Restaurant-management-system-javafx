@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="693.0" style="-fx-background-color: #566D7E;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rls.MenuController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="693.0" layoutY="14.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@../Capture.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="242.0" layoutX="451.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../mu1-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Salebtn" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="222.0" mnemonicParsing="false" onAction="#Salebton" prefHeight="110.0" prefWidth="141.0" style="-fx-background-radius: 1cm; -fx-background-color: #31B404; -fx-border-radius: 5cm;" text="Sale" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Itemrecebutn" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="222.0" mnemonicParsing="false" onAction="#Itemrecebuton" prefHeight="110.0" prefWidth="141.0" style="-fx-background-radius: 1cm; -fx-border-radius: 5cm; -fx-background-color: #31B404;" text="Item Receive" textFill="#f5f4f4">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Productbtn" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="276.0" layoutY="222.0" mnemonicParsing="false" onAction="#Productbton" prefHeight="110.0" prefWidth="141.0" style="-fx-background-radius: 1cm; -fx-background-color: #31B404; -fx-border-radius: 5cm;" text="Product" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="109.0" layoutY="238.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../326-3260701_image-accounts-receivable-icon-png-transparent-png-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="310.0" layoutY="238.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../food_and_drink_solid-26-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="517.0" layoutY="234.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Waiter-03-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

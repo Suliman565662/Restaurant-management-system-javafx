@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="780.0" style="-fx-background-color: #566D7E;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rls.Itemlist">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="681.0" layoutY="14.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../Capture.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="128.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item List" textAlignment="CENTER" wrappingWidth="306.13671875">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="108.0" fitWidth="159.0" layoutX="354.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../menu-icon-food-restaurant-price-260nw-1910313463-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="itemlist" layoutX="18.0" layoutY="145.0" prefHeight="297.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="Recnota" prefWidth="83.0" text="Receving No" />
+          <TableColumn fx:id="dateta" prefWidth="122.0" text="Date" />
+            <TableColumn fx:id="itemnota" prefWidth="68.0" text="Item No" />
+            <TableColumn fx:id="descripta" prefWidth="158.0" text="Description" />
+            <TableColumn fx:id="quantityta" prefWidth="74.0" text="Quantity" />
+            <TableColumn fx:id="buyingta" prefWidth="79.0" text="Buying Price" />
+            <TableColumn fx:id="sellingta" prefWidth="83.0" text="Selling Price" />
+            <TableColumn fx:id="totaltaa" prefWidth="79.0" text="Total Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="showlist" layoutX="591.0" layoutY="101.0" mnemonicParsing="false" onAction="#show" opacity="0.82" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Show" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

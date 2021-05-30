@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="681.0" style="-fx-background-color: #566D7E;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rls.ProductController">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="681.0" layoutY="14.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@../Capture.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="128.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Manage" textAlignment="CENTER" wrappingWidth="306.13671875">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="77.0" fitWidth="135.0" layoutX="444.0" layoutY="14.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../food_and_drink_solid-26-512.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="productid" layoutX="53.0" layoutY="141.0" promptText="Product ID" style="-fx-border-radius: 5cm; -fx-background-radius: 5cm;" />
+      <TextField fx:id="Productname" layoutX="53.0" layoutY="180.0" promptText="Product Name" style="-fx-background-radius: 5cm;" />
+      <TextField fx:id="Unitprice" layoutX="53.0" layoutY="222.0" promptText="Unit Price" style="-fx-background-radius: 5cm;" />
+      <TextField fx:id="unitcost" layoutX="53.0" layoutY="264.0" promptText="Unit Cost" style="-fx-background-radius: 5cm;" />
+      <TableView fx:id="productta" layoutX="265.0" layoutY="141.0" prefHeight="186.0" prefWidth="339.0">
+        <columns>
+          <TableColumn fx:id="productidta" prefWidth="84.0" text="Product_ID" />
+          <TableColumn fx:id="productnameta" prefWidth="110.0" text="Product_Name" />
+            <TableColumn fx:id="unitpriceta" prefWidth="79.0" text="Unit_Price" />
+            <TableColumn fx:id="unitcpstta" prefWidth="65.0" text="Unit_Cost" />
+        </columns>
+      </TableView>
+      <Button fx:id="productlist" layoutX="574.0" layoutY="104.0" mnemonicParsing="false" onAction="#productlistC" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Product List" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productclear" layoutX="431.0" layoutY="356.0" mnemonicParsing="false" onAction="#productclearC" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productRemove" layoutX="341.0" layoutY="356.0" mnemonicParsing="false" onAction="#productremoveC" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productupade" layoutX="265.0" layoutY="356.0" mnemonicParsing="false" onAction="#productupdateC" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="productadd" layoutX="156.0" layoutY="356.0" mnemonicParsing="false" onAction="#productaddc" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Add Product" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

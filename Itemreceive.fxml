@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="681.0" style="-fx-background-color: #566D7E;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rls.ItemreceiveController">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="681.0" layoutY="14.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../Capture.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="217.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Portal" textAlignment="CENTER" wrappingWidth="226.13671875">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="77.0" fitWidth="135.0" layoutX="444.0" layoutY="14.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Waiter-03-512.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="itemlist" layoutX="575.0" layoutY="127.0" mnemonicParsing="false" onAction="#itemlistc" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Item List" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearitem" layoutX="584.0" layoutY="283.0" mnemonicParsing="false" onAction="#clearitemC" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeitem" layoutX="567.0" layoutY="244.0" mnemonicParsing="false" onAction="#removeitemC" prefHeight="28.0" prefWidth="77.0" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="upadeitem" layoutX="568.0" layoutY="202.0" mnemonicParsing="false" onAction="#updateitemC" prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="additem" layoutX="572.0" layoutY="166.0" mnemonicParsing="false" onAction="#additemC" prefHeight="28.0" prefWidth="77.0" style="-fx-background-color: #31B404; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="78.0" layoutY="141.0" prefHeight="121.0" prefWidth="187.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="recnumber" prefHeight="25.0" prefWidth="116.0" promptText="Receving No" style="-fx-border-radius: 5cm; -fx-background-radius: 5cm;" />
+            <DatePicker fx:id="Date" prefHeight="25.0" prefWidth="185.0" promptText="Date" style="-fx-background-radius: 5cm; -fx-border-radius: 5cm;" GridPane.rowIndex="1" />
+            <TextField fx:id="itemno" promptText="Item No" style="-fx-background-radius: 5cm;" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="75.0" layoutY="258.0" prefHeight="77.0" prefWidth="194.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="Dec" prefWidth="187.0" promptText="Description" style="-fx-background-radius: 5cm;" />
+            <TextField fx:id="quan" promptText="Quantity" style="-fx-background-radius: 5cm;" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="334.0" layoutY="141.0" prefHeight="121.0" prefWidth="194.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="buyingp" promptText="Buying Price" style="-fx-background-radius: 5cm;" />
+            <TextField fx:id="sallingp" promptText="Selling Price" style="-fx-background-radius: 5cm;" GridPane.rowIndex="1" />
+            <TextField fx:id="totalp" prefWidth="194.0" promptText="Total Price" style="-fx-background-radius: 5cm;" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
